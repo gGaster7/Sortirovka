@@ -36,7 +36,7 @@ class SortVisualizer:
         self.draw_initial()
 
         # Настройки анимации
-        self.delay = 0.001
+        self.delay = 0.000001
         self.master.after(100, self.start_merge_sort)
 
     def draw_initial(self):
@@ -122,5 +122,5 @@ class SortVisualizer:
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("Сортировка слиянием")
-    visualizer = SortVisualizer(root, size=200)
+    visualizer = SortVisualizer(root, size=1000)
     root.mainloop()
